@@ -88,9 +88,114 @@
     b = a; // This means that you have assigned the content of 'a' to 'b'
 
     //Remember that console.log() allows you to see things in te console. 
-    //console.log(a) and then load it to see it in the console
-    console.log(a)
+    //console.log(b) and then load it to see it in the console
+    console.log(b) //run it (You will see that 'b' automatically becomes the conetent of 'a' which is 7
+
+
+
     
+    //You can use console.log() at different points of your javascript file.
+    // to check the value of the variable.
+
+
+    //5
+    // Initializing Variables w/ Assignment Operator
+
+    var a = 9;//recall that var a simply means declaring it
+              // The equal 9 (= 9) then means initialising it with the assignment operator which is =
+    
+    //6
+    //Uninitialized variables
+
+    // before we do anything to variables, they are uninitialized (which means the value is undefined or not been set to anything). see below:
+    var a; //uninitialized/undefined
+    var b; //    "         "
+    var c; //    "         "
+
+    // To initialize the above three variables:
+    var a = 5;
+    var b = 10
+    var c = "I am a" // a string variable (you can use var or string as data type)
+
+    a = a + 1;
+    b = b + 5;
+    c = c + "String! ";
+    console.log(c);
+
+    //7
+    // Case Sensitivity in Variables
+    // Variable names in java script are case sensitive, this means that capoitalization matters
+    // Note that the declarations and the assignments have different variables and so, will raise an error
+
+    //Declarations
+    var StUdLyCapVaR;
+    var properCamelCase;
+    var TitleCaseOver;
+
+    //Assignments
+    /*It brings an error as the variable declared is different from that used for assignment. 
+    Even though the letters are the same, the capitalization is different. Therefore, variables used for assignment are not defined (error)*/
+    StUDLYCAPVAR = 10; 
+    PRoperCAmelCAse = "A String"; 
+    tiTLEcASEoVER = 9000;      
+
+    // Solution to the above: Use camelCase style of declaring variables (see below: )
+    var studlyCapVar;
+    var properCamelCase;
+    var titleCaseOver;
+
+    studlyCapVar = 10;
+    properCamelCase = "A String";
+    titleCaseOver = 9000;
+
+    //8
+    //Adding Numbers
+
+    //its very straightforward to add numbers, just add the numbers normally during assignment. See example below:
+    var sum= 10 + 10;
+    console.log(sum); // the result is 20 in the console
+
+    //9
+    //Subtracting Numbers
+
+    var difference= 30 - 20;
+    console.log(difference);
+
+    //10
+    //Multiplying Numbers
+    var product= 7 * 4;
+    console.log(product);
+
+    //11
+    //Dividing Numbers
+    var quotient= 28 / 7;
+    console.log(quotient);
+
+    //12
+    //Incrementing Numbers
+    var myVar = 8;
+    myVar= myVar + 1; // incrementing simply means adding 1 to the number
+    console.log(myVar);
+
+    // There is a quicker way to increment a number and that is the use of ++
+    var myVarPlus= 8;
+    myVarPlus= myVarPlus ++; //this is wrong as there should be no space between the variable and the ++
+    myVarPlus= myVarPlus++; //This is wrong..................
+    console.log(myVarPlus);
+
+
+
+
+
+
+
+
+    
+
+
+    
+    
+
 
 
 </script>
