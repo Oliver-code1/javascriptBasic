@@ -172,17 +172,118 @@
     console.log(quotient);
 
     //12
-    //Incrementing Numbers
+    //Incrementing Numbers (using +1)
     var myVar = 8;
     myVar= myVar + 1; // incrementing simply means adding 1 to the number
     console.log(myVar);
 
+    //using ++
     // There is a quicker way to increment a number and that is the use of ++
     var myVarPlus= 8;
     myVarPlus= myVarPlus ++; //this is wrong as there should be no space between the variable and the ++
-    myVarPlus= myVarPlus++; //This is wrong..................
+    myVarPlus= myVarPlus++; //This is wrong beacause there is no need for a new assignment 
+    myVarPlus++;// right way to use ++
     console.log(myVarPlus);
 
+    //13
+    //Decrementing Numbers (using -1)
+    var myVar= 11;
+    myVar= myVar -1 
+    console.log(myVar)      
+    
+    //using --
+    var  number  = 11;
+    number = number--; //This is wrong beacause there is no need for a new assignment 
+    number--; //Right way to use --
+    console.log(number);
+
+
+    //14
+    //Decimal Numbers (Floating-Point Numbers/ floats)
+    var ourDecimal= 5.7;
+    var myDecimal= 0.009;
+
+    //15
+    //Multiply Decimals
+    var product= 2.0 * 0*0;
+    console.log(product);
+
+    //16
+    //Divide Decimals
+    var quotient= 4.4 / 2.0;
+    console.log(quotient);
+
+
+    //17
+    //Finding a remainder
+    //the remainder operator looks like a % sign, it gives the remainder of the quotient of two numbers 
+    var remainder;
+    remainder = 11 % 3; /* the remainder operator is often used to determine whether  a number is even or odd
+                           If you divide by 2, and the remainder is 0, then that means that the number is even,
+                           else, it's odd.*/
+    console.log(remainder);
+
+    //18
+    //Compound Assignment with Augmented Addition
+    var a= 3;
+    var b=17;
+    var c= 12;
+
+    a= a + 12;
+    b= 9 + b;
+    c= c + 7;
+
+    //instead of using the above, you could just use the += operator (thats a short cut)
+
+    a+= 12;
+    b+= 9;
+    c+= 7;
+
+    //19
+    //Compound Assignment with Augmented Subtraction
+    var a = 11;
+    var b= 9;
+    var c = 3;
+
+    a=a -6;
+    b=b -15;
+    c= c-1;
+
+    //instead of using the above, you could just use the -= operator (thats a short cut)
+
+    a-=6;
+    b-=15;
+    c-=1;
+
+    //20
+    //Compound Assignment with Augmented Multiplication
+    var a =5;
+    var b= 12;
+    var c= 4.6;
+
+    a =a * 5;
+    b= 3 * b;
+    c= c * 10;
+
+    //instead of using the above, you could just use the *= operator (thats a short cut)
+
+    c*= 5;
+    b*= 3;
+    c*= 10;
+
+    //21
+    //Compound Assignment with Augmented Division
+    a= a/12;
+    b= b/4;
+    c= c/11;
+
+    
+
+
+
+
+
+
 
 
 
@@ -191,10 +292,18 @@
 
 
     
-
-
     
     
+
+
+
+
+
+
+
+
+
+
 
 
 

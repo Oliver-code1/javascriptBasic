@@ -45,12 +45,122 @@ myVar= myVar + 1;
 console.log(myVar);
 
 var myVarPlus= 8;
-myVarPlus= myVarPlus++; 
+myVarPlus= myVarPlus++;// did not work (it read the above line of code)
 console.log(myVarPlus);
 
 var myNum = 8;
-myNum=myNum++;
+myNum=myNum++;// did not work (it read the above line of code)
 console.log(myNum);
+
+var myVarPluss = 8;
+myVarPluss++;
+console.log(myVarPluss);
+
+var myVar= 11;
+myVar= myVar -1;
+console.log(myVar);
+
+var myVar = 11;
+myVar = myVar--;// did not work (it read the above line of code)
+console.log(myVar);
+
+var  number  = 11;
+number--;
+console.log(number);
+
+
+var product= 2.0 * 0*0;
+console.log(product);
+
+var quotient= 4.4 / 2.0;
+console.log(quotient);
+
+var remainder;
+remainder = 11 % 3;
+console.log(remainder);
+
+
+var a= 3;
+var b=17;
+var c= 12;
+
+a= a + 12;
+b= 9 + b;
+c= c + 7;
+
+console.log(a);
+console.log(b);
+console.log(c);
+
+var a= 3;
+var b=17;
+var c= 12;
+
+a+= 12;
+b+= 9;
+c+= 7;
+
+console.log(a);
+console.log(b);
+console.log(c);
+
+var a = 11;
+var b= 9;
+var c = 3;
+
+a=a -6;
+b=b -15;
+c= c-1;
+
+console.log(a);
+console.log(b);
+console.log(c);
+
+var a = 11;
+var b= 9;
+var c = 3;
+
+a-=6;
+b-=15;
+c-=1;
+
+console.log(a);
+console.log(b);
+console.log(c);
+
+var a =5;
+var b= 12;
+var c= 4.6;
+
+a =a * 5;
+b= 3 * b;
+c= c * 10;
+
+console.log(a);
+console.log(b);
+console.log(c);
+
+var a= 5;
+var b= 12;
+var c= 4.6;
+
+a*= 5;
+b*= 3;
+c*= 10;
+
+console.log(a);
+console.log(b);
+console.log(c);
+
+
+
+
+
+
+
+
+
+
 
 
 
