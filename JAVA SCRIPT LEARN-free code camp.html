@@ -273,9 +273,175 @@
 
     //21
     //Compound Assignment with Augmented Division
+    var a= 36
+    var b= 12
+    var c= 33
+
     a= a/12;
     b= b/4;
     c= c/11;
+
+    //instead of using the above, you could just use the /= operator (thats a short cut)
+    a/=12;
+    b/=4;
+    c/=11;
+
+    //22
+    //Declare String Variables
+    var firstName= "Alan";
+    var lastName= "Turing";
+
+    var myFirstName= "Beau"
+    var myLastName= "Carnes"
+
+    //23
+    //Escaping Literal Quotes in Strings
+
+    /*To escape a string, you need to introduce what is known as a backslash (\) 
+    before each quote after the first quote and before the second quote*/
+
+    //consider the example below:
+
+    // var myStr= "I am a "double quoted" string inside "double quotes"";
+
+    //To escape the above, you introduce the backslash as earlier mentioned:
+
+    var myStr= "I am a \"double quoted\" string inside \"double quotes\"";
+    console.log(myStr);
+
+    //Now it shows the quotation marks in the string
+
+    //24
+    //Quoting Strings with Single Quotes
+    //This is another way to represent a string having quotation marks
+    //And this is the use of single quotes
+
+    //see below:
+    var myStr= "<a href=\"http://www.example.com\" target= \"_blank\">Link</a>";//using \" (using double quotes with double quotes within)
+
+    //but you can also do this:
+    var myStr= '<a gref="http://www.example.com" target= "_blank"Link</a>';//using single quotes (using single quotes with double quotes within)
+
+    //25
+    //Quoting strings with both single quote and double quote
+    //another trick
+    var myStr= `'<a gref="http://www.example.com" target= "_blank"Link</a>'`;/*having both the single quote and double quote and 
+                                                                              this is with the use of backquote or backtick*/
+
+
+    //26
+    //Escape Sequences in Strings
+    //Things you can escape:
+
+    /*****
+    CODE OUTPUT
+    \'     single quote- you can escape this
+    \"     double quote- you cabn escape this
+    \\     backslash- "    "    "    "
+    \n     newline- "    "    "    "
+    \r     carriage return- "    "    "    "
+    \t     tab- "    "    "    "
+    \b     backspace- "    "    "    "
+    \f     form feed- "    "    "    "
+    *****/
+
+    //consider the line of code below:
+    var myStr= "FirstLine\n \t \\SecondLine\nThirdLine";
+    console.log(myStr);
+
+    //27
+    //Concatenating Strings with Plus Operator
+    var ourStr= "I come first." + "I come Second.";
+    console.log(ourStr);
+
+    var myStr= "This is the start. " + "This is the end.";
+    console.log(myStr);
+
+    //28
+    //Concatenating strings with Plus Equals Operator
+    var ourStr= "I come first. ";
+    ourStr+= ("I come second."); //means take whatever is in here (ourStr), take it and add it to the variable.
+    console.log(ourStr);
+
+    //more example
+    var myStr = "This is the first sentence. ";
+    myStr+= "This is the second sentence";
+    console.log(myStr);
+
+    //29
+    //Concatenating Strings with Variables
+    var ourName= "freeCodeCamp";
+    var ourString= "Hello, our name is " + ourName + ", how are you?";
+    console.log (ourString);
+
+    //more example
+    var myName= "Beau";
+    var myStr= "My name is " + myName + " and I am well!";
+    console.log(myStr);
+
+    //30
+    //Appending variables to Strings
+    var anAdjective= "awesome!";
+    var ourStr= "freeCodeCamp is ";
+    ourStr += anAdjective;
+    console.log(ourStr);
+
+    //more example
+    var someAdjective= "worthwhile";
+    var myStr = "Learning to code is ";
+    myStr+=someAdjective;
+    console.log(myStr);
+
+    //31
+    //Find Length of String
+    //Sometimes, you want to find the length of the string, javascript makes this easy
+    //To find the length of a string, you just use ".length," --------------------- ----------  variable.length
+    //See example below:
+
+    var firstNameLength= 0;
+    var firstName= "Ada";
+    firstNameLength= firstName.length;
+    console.log(firstNameLength);
+
+    var lastNameLength=0;
+    var lastName="Lovelace";
+    lastNameLength= lastName.length;
+    console.log (lastNameLength);
+
+    //32
+    //Bracket Notation to Find First Character in String
+    var firstLetterOfFirstName= "";
+    var firstName= "Ada";
+    firstLetterOfFirstName= firstName[0]; 
+    console.log(firstLetterOfFirstName);
+
+    var firstLetterOfLastName= "";
+    var lastName= "Chidubem";
+    firstLetterOfLastName=lastName[0];
+    console.log(firstLetterOfLastName);
+
+    //33
+    //String Immutability
+    /*Strings are immutable meaning that they cannot be altered once created
+    This does not mean that it cannot be changed,
+    Just that the individual characters of a string literal cannot be changed*/
+    
+    //See Example below:
+
+
+
+
+
+
+
+
+
+
+    
+
+
+    
+
 
     
 
