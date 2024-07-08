@@ -173,75 +173,188 @@ c/=11;
 // console.log(c);
 
 var myStr= "I am a \"double quoted\" string inside \"double quotes\"";
-console.log(myStr);
+//console.log(myStr);
 
 var myStr= "<a href=\"http://www.example.com\" target= \"_blank\">Link</a>";
-console.log(myStr);
+//console.log(myStr);
 
 var myStr= '<a gref="http://www.example.com" target= "_blank">Link</a>';
-console.log(myStr)
+//console.log(myStr)
 
 var myStr= `'<a gref="http://www.example.com" target= "_blank"Link</a>'`;/*having both the single quote and double quote and 
                                                                          this is with the use of backquote or backtick*/
-console.log(myStr)
+//console.log(myStr)
 
 var myStr= "FirstLine\n \t \\SecondLine\nThirdLine";
-console.log(myStr);
+//console.log(myStr);
 
 var ourStr= "I come first." + " I come Second."; //same with the next two ones
-console.log(ourStr);
+//console.log(ourStr);
 
 var myStr= "This is the start. " + "This is the end.";
-console.log(myStr);
+//console.log(myStr);
 
 var ourStr= "I come first. ";
 ourStr+= "I come second."; 
-console.log(ourStr);
+//console.log(ourStr);
 
 var myStr = "This is the first sentence. ";
 myStr+= "This is the second sentence";
-console.log(myStr);
+//console.log(myStr);
 
 var ourName= "freeCodeCamp";
 var ourString= "Hello, our name is " + ourName + ", how are you?";
-console.log (ourString);
+//console.log (ourString);
 
 var myName= "Beau";
 var myStr= "My name is " + myName + " and I am well!";
-console.log(myStr)
+//console.log(myStr)
 
 var anAdjective= "awesome!";
 var ourStr= "freeCodeCamp is ";
 ourStr += anAdjective;
-console.log(ourStr)
+//console.log(ourStr)
 
 var someAdjective= "worthwhile";
 var myStr = "Learning to code is ";
 myStr+=someAdjective;
-console.log(myStr);
+//console.log(myStr);
 
 var firstNameLength= 0;
 var firstName= "Ada";
 firstNameLength= firstName.length;
-console.log(firstNameLength);
+//console.log(firstNameLength);
 
 var lastNameLength=0;
 var lastName="Lovelace";
 lastNameLength= lastName.length;
-console.log (lastNameLength);
+//console.log (lastNameLength);
 
 var firstLetterOfFirstName= "";
 var firstName= "Ada";
 firstLetterOfFirstName= firstName[0]; 
-console.log(firstLetterOfFirstName);
+//console.log(firstLetterOfFirstName);
 
 var firstLetterOfLastName= "";
 var lastName= "Chidubem";
 firstLetterOfLastName=lastName[0];
-console.log(firstLetterOfLastName);
+//console.log(firstLetterOfLastName);
+
+var myStr="Jello World";
+myStr[0]= "H"; //would throw an error
+myStr= "Hello World";//correct way to fix it
+
+var lastName= "Okeke"
+var secondLetterOfLastName= lastName[1]
+//console.log(secondLetterOfLastName);
+
+var lastName= "Okeke"
+var fourthLetterOfLastName= lastName[3]
+//console.log(secondLetterOfLastName);
+
+var lastLetterOfFirstName="";
+var firstName= "AdaOwerri";
+var lastLetterOfFirstName= firstName[firstName.length-1];
+//console.log(lastLetterOfFirstName);
+
+var firstName= "EzigboAda";
+var thirdToLastName= firstName[firstName.length-3];
+//console.log(thirdToLastName);
+
+var lastName="Lovelace";
+var secondToLastLetter= lastName[lastName.length-2];
+//console.log(secondToLastLetter);
+
+function wordBlanks(myNoun, myAdjective, myVerb, myAdverb) {
+
+    var result= "";
+    //result += "The " + myAdjective + myNoun + myVerb + " to the store " + myAdverb // check that there are no spaces when you run this
+    result += "The " + myAdjective + " " + myNoun + " " + myVerb + " to the store " + myAdverb // been fixed by adding spaces
 
 
 
+    return result;
+}
+// console.log(wordBlanks("dog", "big" , "ran", "quickly"));
+// console.log(wordBlanks("bike", "slow" , "flew", "slowly"))
+
+
+var ourArray= ["John", 23]; //meaning that john is always 23 whenever you call this array
+// console.log(ourArray);
+var myArray= ["Quincy", 1 ]; //meaning that quincy is always 1 unless otherwise changed
+//console.log(myArray);
+
+var ourArray= [["the universe", 42], ["everything", 101010]];
+//console.log(ourArray);
+
+var myArray= [["Bulls", 23], ["White sox", 45]];
+// console.log(myArray);
+// console.log(myArray[0], myArray[1]); //This shows the elements of the two arrays as they are
+
+var ourArray= [50,60,70];
+var ourData= ourArray[0];
+//console.log(ourData); 
+
+var myData= ourArray[2];
+//console.log(myData);
+
+var ourArray= [18, 64, 99];
+ourArray[1]= 53;
+//console.log(ourArray)
+
+ourArray[0]= 50;
+//console.log(ourArray);
+
+var myArray=[[1,2,3], [4,5,6], [7,8,9], [[10,11,12], 13,14]];
+var myData = myArray[0][0];
+// console.log(myData);
+
+var myDataAgain=myArray[2][1];
+// console.log(myDataAgain);
+
+var myData2= myArray[3][0][2]; // triple bracket notation
+// console.log(myData2);
+
+var ourArray= ["Stimpson", "J", "cat"];
+ourArray.push("Attorney", "General");
+// console.log(ourArray);
+
+var ourArray= ["Stimpson", "J", "cat"];
+ourArray.push(["happy", "joy"]);
+// console.log(ourArray);
+// console.log(ourArray[0],ourArray[1], ourArray[2], ourArray[3]);
+
+var myArray= [["John", 23], ["cat", 2]];
+myArray.push(["Dog", 3]);
+// console.log(myArray);
+
+var ourArray= [1,2,3];
+var removedFromOurArray= ourArray.pop();// 3 is removed
+// console.log(ourArray);
+
+var myArray= [["John", 23], ["cat",2]];
+var removedFromMyArray= myArray.pop();//removes the last element and holds it
+//console.log(myArray);//prints the remaining after removing the last element
+
+var myArray= [["John", 23], ["cat",2]];
+var removedFromMyArray= myArray.pop();//removes the last element and holds it
+//console.log(myArray[0]);//prints the remaining after removing the last element
+
+var myArray= [["John", 23], ["cat",2]];
+var removedFromMyArray= myArray.pop();//removes the last element and holds it
+//console.log(removedFromMyArray);//removes what was printed
+
+var ourArray= ["Stimpson", "J", "cat"];
+var removedFromOurArray= ourArray.shift();//removes the first element and holds it
+//console.log(ourArray);//prints the remaining after removing the first element
+
+var myArray=[["John", 23], ["Dog", 3]];
+var removedFromMyArray= myArray.shift();//removes the first element and holds it
+//console.log(myArray);//prints the remaining after removing the first element
+
+var myArray=[["John", 23], ["Dog", 3]];
+var removedFromMyArray= myArray.shift();//removes the first element and holds it
+//console.log(myArray[0]);//prints the remaining after removing the first element
 
 
 

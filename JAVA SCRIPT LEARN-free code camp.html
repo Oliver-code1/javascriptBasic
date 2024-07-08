@@ -420,13 +420,263 @@
     firstLetterOfLastName=lastName[0];
     console.log(firstLetterOfLastName);
 
+
     //33
     //String Immutability
     /*Strings are immutable meaning that they cannot be altered once created
-    This does not mean that it cannot be changed,
+    This does not mean that they cannot be changed,
     Just that the individual characters of a string literal cannot be changed*/
     
     //See Example below:
+
+    var myStr="Jello World";
+    //we want the first letter to change to an "H" as below:
+    myStr[0]= "H" // but if you run that, there's going to be an error because of the immutability of strings.
+    /*Now, we can still change it to Hello World but we can't just change an individual letter like that
+    So we are going to have to type the whole thing which is "Hello World" as seen below*/
+    myStr= "Hello World";// Now its corrected. Therefore we cannot modify using indexes
+
+
+    //34
+    //Bracket Notation to find the Nth character in a string
+    var lastName= Okeke;
+    var secondLetterOfLastName= lastName[1];
+    console.log(secondLetterOfLastName);
+
+    var lastName= "Okeke";
+    var fourthLetterOfLastName= lastName[3];
+    console.log(secondLetterOfLastName);
+
+    //35
+    //Bracket Notation to find the last character in string
+    // the number inside the string should be the length of the letter(variable.length) minus 1
+    // that is variable [variable.length-1]............ See below
+    var lastLetterOfFirstName="";
+    var firstName= Ada;
+    var lastLetterOfFirstName= firstName[firstName.length-1];
+    console.log(lastLetterOfFirstName);
+
+
+    //36
+    //Bracket Notation to find Nth-to-Last Character in String
+    //Firstly, to get the 3rd to last letter, we need to use variable.length-3
+    //also to get the 4th to last letter, we need to use variable.length-4
+    //to get the 5th to last letter, we need to use variable.length-5
+    //to get the 6th to last letter, we need to use variable.length-6
+    var firstName= "EzigboAda";
+    var thirdToLastName= firstName[firstName.length-3];
+    console.log(thirdToLastName);
+
+    var lastName="Lovelace";
+    var secondToLastLetter= lastName[lastName.length-2];
+    console.log(secondToLastLetter);
+
+    //37
+    // Word Blanks
+    function wordBlanks(myNoun, myAdjective, myVerb, myAdverb) {
+        /*function created: to be talked about in later slides
+
+        but we are going to use our knowledge of strings to create a Mad Libs style word game.
+        In a Mad Lib game, you are provided sentences with some missing words like nouns, adjectives and adverbs,
+        and then we fill in the missing pieces with words of your choice and hopefully, it makes a little bit of sense.
+
+        In the function, some words were passed in as seen above*/ 
+        var result= "";
+        result += "The " + myAdjective + myNoun + myVerb + " to the store " + myAdverb; // check that there are no spaces when you run this
+        result += "The " + myAdjective + " " + myNoun + " " + myVerb + " to the store " + myAdverb; // been fixed by adding spaces
+
+        return result;
+    }
+    console.log(wordBlanks("dog", "big" , "ran", "quickly"));// Here, the function was called
+                                                             // the point is that we are going to use all these words passed in to make a sentence.
+    console.log(wordBlanks("bike", "slow" , "flew", "slowly"));
+
+    //38
+    //Store Multiple Values with Arrays
+
+    /*Arrays allow you to store several pieces of data in one place,
+     arrays always start with a bracket to show the beginning and end of the arrays
+     and every element in the array is separated by a comma.
+     The elements in a javascript array can be of any data type unlike c++ and swift that are usually of the same data types, etc.*/
+
+    // See example below:
+
+    var ourArray= ["John", 23]; //meaning that john is always 23 whenever you call this array
+    console.log(ourArray);
+
+    var myArray= ["Quincy", 1 ]; //meaning that quincy is always 1 unless otherwise changed
+    console.log(myArray);
+
+    //39
+    //Nested Arrays
+    //Nested Arrays is simply having an array inside another array
+    //When one of the element in an array is another array, thats called a NESTED array or a MULTIDIMENSIONAL array
+    // See example below:
+    var ourArray= [["the universe", 42], ["everything", 101010]]; // you can see that the first element of the array is an array and the second as well
+    //makes it two arrays within another array.
+    console.log(ourArray);
+
+    var myArray= [["Bulls", 23], ["White sox", 45]];
+    console.log(myArray);
+    console.log(myArray[0], myArray[1]); //This shows the elements of the two arrays as they are
+
+    //40
+    //Access Array Data with Indexes
+
+    //earlier we learned how to use bracket notation to find a specific index in a string
+    //we can actually do the same with arrays
+
+    var ourArray= [50,60,70]; // having indexes of 0,1 and 2 consecutively
+    var ourData= ourArray[0];
+    console.log(ourData);  // thats going to be 50
+
+    var myData= ourArray[2];
+    console.log(myData);
+
+    //41
+    //Modify Array Data With Indexes
+
+    //You can use array indexes to modify arrays
+
+    /*Remember that we tried to do this earlier with strings using bracket notation, 
+    but we were not able to modify a string using bracket notation. 
+    However, we can do this with arrays (see //33)*/
+    
+    var ourArray= [18, 64, 99];
+    ourArray[1]= 53;
+    console.log(ourArray) //changes are reflected
+
+    ourArray[0]= 50;
+    console.log(ourArray);
+
+    //42
+    //Access Multi-Dimensional Arrays With Indexes
+
+    //You can also use bracket notation to select an element in a multi-dimensional or array of arrays. See below:
+
+    var myArray=[[1,2,3], [4,5,6], [7,8,9], [[10,11,12], 13,14]]; //multidimensional array, nested array, array of arrays
+    //To access an array of arrays or an element within an array, you need to use a DOUBLE BRACKET NOTATION.
+    //See example below:
+
+    var myData = myArray[0][0];
+    /*The first bracket which is [0] targets the first element in the array (myArray) which is [1,2,3] 
+    while the second bracket [0] targets the first element of the first array of array*/ 
+    console.log(myData);
+
+    var myDataAgain=myArray[2][1];
+    console.log(myDataAgain);
+
+    //Note there is also a triple bracket notation,
+    //Let us access the number 12 in the 4th element of the array
+
+    var myData2= myArray[3][0][2];
+    console.log(myData2);
+
+    //43
+    //Manipulate Arrays with push()
+    //The push function "push()" is used to add elements to an array. See below:
+
+    var ourArray= ["Stimpson", "J", "cat"];
+    ourArray.push("Attorney", "General");//has been added
+    console.log(ourArray);// to get ['Stimpson', 'J', 'cat', 'Attorney', 'General']
+
+    var ourArray= ["Stimpson", "J", "cat"];
+    ourArray.push(["happy", "joy"]);
+    console.log(ourArray);//added
+    console.log(ourArray[0],ourArray[1], ourArray[2], ourArray[3]);//spot the difference with the above console.log
+
+    var myArray= [["John", 23], ["cat", 2]];
+    myArray.push(["Dog", 3]);
+    console.log(myArray);
+
+    //44
+    //Manipulate arrays with pop()
+    //The pop() function is used to remove an item from an array.
+    //Note that it removes the LAST item from the array. See below:
+    //If you call pop() on an empty array, it returns undefined.
+    var ourArray= [1,2,3];
+    var removedFromOurArray= ourArray.pop();// this removes 3 which is the last element
+    //Therefore the variable removedFromOurArray becomes [1,2]
+    console.log(ourArray);
+
+    var myArray= [["John", 23], ["cat",2]];
+    var removedFromMyArray= myArray.pop();//removes the last element and holds it
+    console.log(myArray);//prints the remaining after removing the last element
+
+    var myArray= [["John", 23], ["cat",2]];
+    var removedFromMyArray= myArray.pop();//removes the last element and holds it
+    console.log(removedFromMyArray);//prints what was removed
+
+    //45
+    //Manipulate Arrays with shift()
+    //The shift() is very similar to the pop() except it removes the FIRST element of the array instead of the last/final element
+    var ourArray= ["Stimpson", "J", "cat"];
+    var removedFromOurArray= ourArray.shift();
+    console.log(ourArray);
+
+    var myArray=[["John", 23], ["Dog", 3]];
+    var removedFromMyArray= myArray.shift();
+    console.log(myArray);
+
+    var myArray=[["John", 23], ["Dog", 3]];
+    var removedFromMyArray= myArray.shift();//removes the first element and holds it
+    console.log(myArray[0]);//prints the remaining after removing the first element
+
+    //46
+    //Manipulate Arrays with unshift();
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+        
+
+
+
+    
+
+
+
+
+
+
+
+
+
 
 
 
