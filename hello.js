@@ -356,7 +356,18 @@ var myArray=[["John", 23], ["Dog", 3]];
 var removedFromMyArray= myArray.shift();//removes the first element and holds it
 //console.log(myArray[0]);//prints the remaining after removing the first element
 
+var myColours= ["Pink", "Yellow", "Red"];
+var myBestColourAdded= myColours.unshift("Blue");//Adds this element to the beginning of the array
+console.log (myColours);
 
+var ourArray= ["Stimpson", "J", "cat"];
+ourArray.shift();//removes the first element in the array, therefore becomes ["J","cat"]
+console.log(ourArray.unshift("Happy"));
+
+var ourArray= ["Stimpson", "J", "cat"];
+ourArray.shift();//removes the first element in the array, therefore becomes ["J","cat"]
+var newArray=ourArray.unshift("Happy")
+console.log(ourArray);
 
 
 
