@@ -632,8 +632,49 @@
     console.log (myColours);
 
     var ourArray= ["Stimpson", "J", "cat"];
+    ourArray.shift();//removes the first element in the array, therefore becomes ["J","cat"]
+    console.log(ourArray.unshift("Happy"));
+
+    var ourArray= ["Stimpson", "J", "cat"];
+    ourArray.shift();//removes the first element in the array, therefore becomes ["J","cat"]
+    var newArray=ourArray.unshift("Happy");
+    console.log(ourArray);
+
+    //same with the above
+    var ourArray= ["Stimpson", "J", "cat"];
     ourArray.shift();//removes the first element in the array
     ourArray.unshift("Happy");
+    console.log(ourArray);
+
+    var myArray=[["John", 23], ["Dog", 3]];
+    var removedFromMyArray= myArray.shift();//removes the first element
+    myArray.unshift(["Oliver", 23])
+    console.log(myArray[0]);//prints the remaining after adding the new element.
+
+    //47
+    //NESTED ARRAYS (Nest Arrays)
+    //Shopping List
+    /*This will be a shopping list, so inside the array,
+    we're going to have another array*/
+    var myList= [["Cereal", 3], ["milk", 2], ["Bananas", 3], ["Juice", 2], ["Eggs", 12] ];
+    //The above is an array of arrays which is our shopping list.
+
+    //48
+    //Write Reusable Code with Functions
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
